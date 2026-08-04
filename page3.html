@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Наш выезд с палатками</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- ФОН -->
+    <div class="bg-layer"></div>
+
+    <!-- ЧАСТИЦЫ -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- ОСНОВНОЙ КОНТЕЙНЕР -->
+    <div class="container">
+
+        <!-- Заголовок -->
+        <h1 class="title">
+            <span class="gradient">Наш выезд</span> <span class="emoji">🏕️</span>
+        </h1>
+
+        <!-- Подзаголовок -->
+        <p class="subtitle">Палатка · Костер · Собаки-разбойники</p>
+
+        <!-- ТЕКСТ (первая часть) -->
+        <div class="text-wrapper" style="margin-bottom: 12px;">
+            <div class="text-content text-left">
+
+                <p>
+                    Помнишь ту поездку? Мы выбрались на природу, поставили палатку,
+                    развели костёр и мангал. <span class="highlight">Это был лютый вайб</span> -
+                    дым, звёзды, треск углей и разговоры до ночи.
+                    Пахло шашлыком, лесом и свободой.
+                </p>
+
+                <p>
+                    Мы сидели у костра, смотрели на огонь и, кажется,
+                    говорили обо всём на свете. <span class="highlight">Это был идеальный вечер</span> -
+                    без интернета, без работы, только природа и компания.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- ===== КАРУСЕЛЬ С ФОТОГРАФИЯМИ ===== -->
+        <div class="carousel-section">
+            <p class="carousel-title">📸 Моменты с той поездки</p>
+
+            <div class="carousel-wrapper">
+                <div class="carousel-track" id="carouselTrack">
+
+                    <!-- Слайд 1 -->
+                    <div class="carousel-slide">
+                        <img src="img/1.jpg" alt="Фото 1" loading="lazy" />
+                    </div>
+
+                    <!-- Слайд 2 -->
+                    <div class="carousel-slide">
+                        <img src="img/2.jpg" alt="Фото 2" loading="lazy" />
+                    </div>
+
+                    <!-- Слайд 3 -->
+                    <div class="carousel-slide">
+                        <img src="img/3.jpg" alt="Фото 3" loading="lazy" />
+                    </div>
+
+                    <!-- Слайд 4 -->
+                    <div class="carousel-slide">
+                        <img src="img/4.jpg" alt="Фото 4" loading="lazy" />
+                    </div>
+
+                </div>
+
+                <!-- Кнопки навигации -->
+                <button class="carousel-btn prev" id="prevBtn" aria-label="Предыдущее фото">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                </button>
+                <button class="carousel-btn next" id="nextBtn" aria-label="Следующее фото">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Индикаторы -->
+            <div class="carousel-dots" id="carouselDots">
+                <button class="carousel-dot active" data-index="0"></button>
+                <button class="carousel-dot" data-index="1"></button>
+                <button class="carousel-dot" data-index="2"></button>
+                <button class="carousel-dot" data-index="3"></button>
+            </div>
+        </div>
+
+        <!-- ТЕКСТ (вторая часть) -->
+        <div class="text-wrapper" style="margin-bottom: 20px; margin-top: 4px;">
+            <div class="text-content text-left">
+
+                <p>
+                    А потом наступила ночь. Все разошлись по палаткам.
+                    Ты <span class="highlight">сладко спала</span>, укутавшись в спальник,
+                    и ничего не подозревала...
+                </p>
+
+                <!-- Цитата-вставка (история с собаками) -->
+                <div class="quote-block">
+                    А тем временем местные собаки <span class="highlight">устроили налёт</span> 🐕🐕
+                    Они тихо, как ниндзя, стащили наши колбаски и сожрали их прям на наших глазах!
+                    Мы проснулись от шороха, а они уже дожевывали последние кусочки
+                    и смотрели на нас с таким видом: <span class="highlight">«Что? Мы ничего не делали 😇»</span>
+                </div>
+
+                        <!-- ГИФКА (вставь свою) -->
+                <div class="gif-wrapper">
+                    <!-- ⬇️ СЮДА ВСТАВЬ СВОЮ ГИФКУ ⬇️ -->
+                    <img
+                        src="img/gif3.gif"
+                        alt="Мемная гифка про природу"
+                        loading="lazy"
+                    />
+                    <!-- ⬆️ КОНЕЦ ВСТАВКИ ГИФКИ ⬆️ -->
+                </div>
+
+                <p>
+                    <span class="highlight">Хорошо, что ты спала</span> и не видела этого позорища.
+                    А мы потом смеялись до утра, представляя, как эти разбойники
+                    планировали своё преступление.
+                </p>
+
+                <p style="margin-top: 8px; font-size: 0.9rem; color: rgba(255,225,200,0.5);">
+                    Колбаски погибли геройски. Мы их не забудем...
+                </p>
+
+            </div>
+        </div>
+
+        <!-- КНОПКИ НАВИГАЦИИ -->
+        <div class="btn-wrapper">
+            <div class="nav-row">
+                <a href="page2.html" class="btn-next btn-back">
+                    <span>
+                        <span class="arrow-left">←</span> Назад
+                    </span>
+                </a>
+                <a href="page4.html" class="btn-next">
+                    <span>
+                        Дальше <span class="arrow">→</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <!-- ПРОГРЕСС -->
+        <div class="progress-bar">
+            <div class="fill fill-75"></div>
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // ============================================
+        // КАРУСЕЛЬ
+        // ============================================
+        (function() {
+            const track = document.getElementById('carouselTrack');
+            const dots = document.querySelectorAll('.carousel-dot');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            let currentIndex = 0;
+            const totalSlides = 4;
+            let autoplayInterval = null;
+            const AUTOPLAY_DELAY = 4000;
+
+            function goToSlide(index) {
+                if (index < 0) index = totalSlides - 1;
+                if (index >= totalSlides) index = 0;
+                currentIndex = index;
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+                // Обновляем точки
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === currentIndex);
+                });
+            }
+
+            function nextSlide() {
+                goToSlide(currentIndex + 1);
+            }
+
+            function prevSlide() {
+                goToSlide(currentIndex - 1);
+            }
+
+            function startAutoplay() {
+                stopAutoplay();
+                autoplayInterval = setInterval(nextSlide, AUTOPLAY_DELAY);
+            }
+
+            function stopAutoplay() {
+                if (autoplayInterval) {
+                    clearInterval(autoplayInterval);
+                    autoplayInterval = null;
+                }
+            }
+
+            // Обработчики кнопок
+            nextBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                nextSlide();
+                startAutoplay(); // перезапускаем автоплей
+            });
+
+            prevBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                prevSlide();
+                startAutoplay();
+            });
+
+            // Обработчики точек
+            dots.forEach((dot) => {
+                dot.addEventListener('click', function() {
+                    const index = parseInt(this.dataset.index);
+                    goToSlide(index);
+                    startAutoplay();
+                });
+            });
+
+            // Пауза при наведении на карусель
+            const wrapper = document.querySelector('.carousel-wrapper');
+            wrapper.addEventListener('mouseenter', stopAutoplay);
+            wrapper.addEventListener('mouseleave', startAutoplay);
+
+            // Для тач-устройств — пауза при касании
+            wrapper.addEventListener('touchstart', stopAutoplay);
+            wrapper.addEventListener('touchend', startAutoplay);
+
+            // Стартуем автоплей
+            startAutoplay();
+
+            // Доступ к функциям для отладки (опционально)
+            window.carousel = { goToSlide, nextSlide, prevSlide };
+        })();
+    </script>
+
+</body>
+</html>
